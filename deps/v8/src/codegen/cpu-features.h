@@ -32,6 +32,7 @@ enum CpuFeature {
   INTEL_JCC_ERRATUM_MITIGATION,
   CETSS,
   F16C,
+  APX_F,
 
 #elif V8_TARGET_ARCH_ARM
   // - Standard configurations. The baseline is ARMv6+VFPv2.
@@ -75,7 +76,6 @@ enum CpuFeature {
   FPU,
 
 #elif V8_TARGET_ARCH_PPC64
-  PPC_8_PLUS,
   PPC_9_PLUS,
   PPC_10_PLUS,
   PPC_11_PLUS,
@@ -99,6 +99,7 @@ enum CpuFeature {
   ZBA,
   ZBB,
   ZBS,
+  ZFH,
   ZICOND,
   ZICFISS,
 #endif

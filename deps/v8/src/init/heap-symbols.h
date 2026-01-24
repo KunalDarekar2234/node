@@ -629,6 +629,7 @@
   V(_, daysInYear_string, "daysInYear")                                       \
   V(_, default_string, "default")                                             \
   V(_, defer_string, "defer")                                                 \
+  V(_, Deferred_Module_string, "Deferred Module")                             \
   V(_, defineProperty_string, "defineProperty")                               \
   V(_, deleteProperty_string, "deleteProperty")                               \
   V(_, detached_string, "detached")                                           \
@@ -699,6 +700,7 @@
   V(_, ignoreCase_string, "ignoreCase")                                       \
   V(_, illegal_access_string, "illegal access")                               \
   V(_, illegal_argument_string, "illegal argument")                           \
+  V(_, immutable_string, "immutable")                                         \
   V(_, index_string, "index")                                                 \
   V(_, indices_string, "indices")                                             \
   V(_, Infinity_string, "Infinity")                                           \
@@ -905,6 +907,7 @@
   V(_, call_site_info_symbol)                             \
   V(_, class_fields_symbol)                               \
   V(_, class_positions_symbol)                            \
+  V(_, detached_symbol)                                   \
   V(_, error_end_pos_symbol)                              \
   V(_, error_message_symbol)                              \
   V(_, error_script_symbol)                               \
@@ -1049,7 +1052,6 @@
   F(SCAVENGER_SCAVENGE_PIN_OBJECTS)                     \
   F(SCAVENGER_SCAVENGE_ROOTS)                           \
   F(SCAVENGER_SCAVENGE_STACK_ROOTS)                     \
-  F(SCAVENGER_SCAVENGE_UPDATE_REFS)                     \
   F(SCAVENGER_SCAVENGE_WEAK)                            \
   F(SCAVENGER_SCAVENGE_FINALIZE)                        \
   F(SCAVENGER_SCAVENGE_RESTORE_AND_QUARANTINE_PINNED)   \
@@ -1068,6 +1070,7 @@
   F(MC_CLEAR_JOIN_JOB)                           \
   F(MC_CLEAR_JS_WEAK_REFERENCES)                 \
   F(MC_CLEAR_MAPS)                               \
+  F(MC_CLEAR_SHARED_STRUCT_TYPE_REGISTRY)        \
   F(MC_CLEAR_SLOTS_BUFFER)                       \
   F(MC_CLEAR_STRING_TABLE)                       \
   F(MC_CLEAR_WEAK_COLLECTIONS)                   \
@@ -1131,6 +1134,7 @@
   MC_INCREMENTAL_SCOPES(F)               \
   MINOR_MS_INCREMENTAL_SCOPES(F)         \
   F(HEAP_EMBEDDER_TRACING_EPILOGUE)      \
+  F(HEAP_ENSURE_SWEEPING_COMPLETED)      \
   F(HEAP_EPILOGUE)                       \
   F(HEAP_EPILOGUE_SAFEPOINT)             \
   F(HEAP_EXTERNAL_EPILOGUE)              \
